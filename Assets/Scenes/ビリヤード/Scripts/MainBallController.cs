@@ -105,7 +105,7 @@ public class MainBallController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         other.GetComponent<IHasTrigger>().Triggerred();
-        transform.position = getNoisedVector3(focusPosition, 10f);
+        transform.position = getNoisedVector3(focusPosition, startDislocationStrength);
         rb.velocity = Vector3.zero;
     }
     private void OnCollisionEnter(Collision collision)

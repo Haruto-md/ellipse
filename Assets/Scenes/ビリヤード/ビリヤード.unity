@@ -926,6 +926,10 @@ PrefabInstance:
       propertyPath: startPositionIndicator
       value: 
       objectReference: {fileID: 588201280}
+    - target: {fileID: 7264740573110531082, guid: 70a563d6668cb4d4fad2e1ef313497ad, type: 3}
+      propertyPath: startDislocationStrength
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7804879790199481714, guid: 70a563d6668cb4d4fad2e1ef313497ad, type: 3}
       propertyPath: m_IsActive
       value: 0
