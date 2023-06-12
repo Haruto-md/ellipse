@@ -8,7 +8,7 @@ public class Obstacle : MonoBehaviour,IHasTrigger
     private void Start()
     {
     }
-    public void Triggerred()
+    public void Triggerred(Transform transform)
     {
         transform.parent.GetComponent<ObjectManager>().Score--;
         audioSource = GetComponent<AudioSource>();

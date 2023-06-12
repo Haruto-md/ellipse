@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class TargetController : MonoBehaviour,IHasTrigger
 {
-    public void Triggerred()
+    public void Triggerred(Transform transform)
     {
-        transform.parent.GetComponent<ObjectManager>().Score++;
+        transform.parent.GetComponent<ObjectManager>().Score+= Mathf.FloorToInt(transform.GetComponent<Rigidbody>().velocity.magnitude);
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.Play();
     }

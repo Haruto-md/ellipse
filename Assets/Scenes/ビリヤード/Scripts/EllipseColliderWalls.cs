@@ -99,7 +99,7 @@ public class EllipseColliderWalls : MonoBehaviour, IHasTrigger
         meshCollider.sharedMesh = mesh;
         GetComponent<MeshFilter>().sharedMesh = mesh;
     }
-    public void Triggerred()
+    public void Triggerred(Transform transform)
     {
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.Play();

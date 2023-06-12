@@ -1,4 +1,6 @@
+using UnityEngine;
+using Unity;
 public interface IHasTrigger
 {
-    void Triggerred();
+    void Triggerred(Transform transform);
 }

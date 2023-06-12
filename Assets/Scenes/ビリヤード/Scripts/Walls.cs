@@ -76,7 +76,7 @@ public class Walls : MonoBehaviour,IHasTrigger
             wall.transform.localScale = new Vector3(_wall_prefab.transform.localScale.x/transform.lossyScale.x, _wall_prefab.transform.lossyScale.y / transform.localScale.y, distance / transform.lossyScale.z);
         }
     }
-    public void Triggerred()
+    public void Triggerred(Transform transform)
     {
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.Play();
